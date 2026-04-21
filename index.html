@@ -59,23 +59,11 @@ scrollbar-width: none;  /* Firefox */
 	margin: 0.2vw;
 }
 
-/* Preloader deve essere già ON dal primo paint */
-.preloader{
-	display:block;
-  position: fixed;
-  inset: 0;
-  z-index: 160;
-  display: flex;              /* evita che “compaia” quando parte il JS */
-  transform-origin: top center;
-  will-change: transform;
-}
+/* Preloader disabilitato */
+.preloader{ display:none !important; }
 
-/* Anti-flicker definitivo: immagini chiuse dal primo paint */
-[data-load-img]{
-  -webkit-clip-path: inset(0 0 100% 0);
-  clip-path: inset(0 0 100% 0);
-  will-change: clip-path;
-}
+/* Anti-flicker disabilitato — preloader rimosso */
+[data-load-img]{ -webkit-clip-path: none; clip-path: none; }
 
 .st-char {
   display: inline-block;
