@@ -1,0 +1,298 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * itc-avant-garde-gothic-pro:
+ *   - http://typekit.com/eulas/00000000000000007735ba14
+ *   - http://typekit.com/eulas/00000000000000007735ba1d
+ *   - http://typekit.com/eulas/0000000000000000775aa974
+ *   - http://typekit.com/eulas/0000000000000000775aa970
+ * john-doe:
+ *   - http://typekit.com/eulas/000000000000000077359705
+ *   - http://typekit.com/eulas/00000000000000007735970b
+ * neue-haas-grotesk-display:
+ *   - http://typekit.com/eulas/00000000000000007735bb48
+ *   - http://typekit.com/eulas/00000000000000007735bb53
+ *   - http://typekit.com/eulas/00000000000000007735bb6a
+ *   - http://typekit.com/eulas/00000000000000007735bb6c
+ * neue-haas-grotesk-text:
+ *   - http://typekit.com/eulas/00000000000000007735bb33
+ *   - http://typekit.com/eulas/00000000000000007735bb35
+ *   - http://typekit.com/eulas/00000000000000007735bb39
+ *   - http://typekit.com/eulas/00000000000000007735bb3d
+ * prestige-elite-std:
+ *   - http://typekit.com/eulas/00000000000000007735d4d0
+ *   - http://typekit.com/eulas/00000000000000007735d4d7
+ *   - http://typekit.com/eulas/00000000000000007735d4dd
+ *   - http://typekit.com/eulas/00000000000000007735d4d8
+ * secret-service-typewriter:
+ *   - http://typekit.com/eulas/000000000000000077588c32
+ * tgn-soft-round:
+ *   - http://typekit.com/eulas/00000000000000007735ba46
+ *   - http://typekit.com/eulas/00000000000000007735ba6c
+ * tgn-soft-round-comp:
+ *   - http://typekit.com/eulas/00000000000000007735ba4d
+ *   - http://typekit.com/eulas/00000000000000007735ba42
+ * tgn-soft-round-con:
+ *   - http://typekit.com/eulas/00000000000000007735ba64
+ *   - http://typekit.com/eulas/00000000000000007735ba47
+ * trade-gothic-next:
+ *   - http://typekit.com/eulas/00000000000000007735ba3f
+ *   - http://typekit.com/eulas/00000000000000007735ba6d
+ *   - http://typekit.com/eulas/00000000000000007735ba65
+ *   - http://typekit.com/eulas/00000000000000007735ba66
+ * trade-gothic-next-compressed:
+ *   - http://typekit.com/eulas/00000000000000007735ba41
+ *   - http://typekit.com/eulas/00000000000000007735ba75
+ * trade-gothic-next-condensed:
+ *   - http://typekit.com/eulas/00000000000000007735ba43
+ *   - http://typekit.com/eulas/00000000000000007735ba50
+ *   - http://typekit.com/eulas/00000000000000007735ba49
+ *   - http://typekit.com/eulas/00000000000000007735ba72
+ * typeka:
+ *   - http://typekit.com/eulas/00000000000000007735adf6
+ *   - http://typekit.com/eulas/00000000000000007735adfa
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2025-12-22 20:11:34 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=biw5ksl&ht=tk&f=549.550.18369.18370.18371.18372.34315.34316.39347.39348.60034.60035.39494.39495.39500.39501.39504.39505.39508.39509.39680.39681.39684.39687.39688.39689.39691.39692.39693.39694.39700.39701.39697.39699.39703.39704.59199&a=62458922&app=typekit&e=css");
+
+@font-face {
+font-family:"john-doe";
+src:url("000000000000000077359705_31_l.woff2") format("woff2"),url("000000000000000077359705_31_d.woff2") format("woff"),url("000000000000000077359705_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"john-doe";
+src:url("00000000000000007735970b_31_l.woff2") format("woff2"),url("00000000000000007735970b_31_d.woff2") format("woff"),url("00000000000000007735970b_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"prestige-elite-std";
+src:url("00000000000000007735d4d0_31_l.woff2") format("woff2"),url("00000000000000007735d4d0_31_d.woff2") format("woff"),url("00000000000000007735d4d0_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"prestige-elite-std";
+src:url("00000000000000007735d4d7_31_l.woff2") format("woff2"),url("00000000000000007735d4d7_31_d.woff2") format("woff"),url("00000000000000007735d4d7_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"prestige-elite-std";
+src:url("00000000000000007735d4dd_31_l.woff2") format("woff2"),url("00000000000000007735d4dd_31_d.woff2") format("woff"),url("00000000000000007735d4dd_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"prestige-elite-std";
+src:url("00000000000000007735d4d8_31_l.woff2") format("woff2"),url("00000000000000007735d4d8_31_d.woff2") format("woff"),url("00000000000000007735d4d8_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"typeka";
+src:url("00000000000000007735adf6_31_l.woff2") format("woff2"),url("00000000000000007735adf6_31_d.woff2") format("woff"),url("00000000000000007735adf6_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"typeka";
+src:url("00000000000000007735adfa_31_l.woff2") format("woff2"),url("00000000000000007735adfa_31_d.woff2") format("woff"),url("00000000000000007735adfa_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"itc-avant-garde-gothic-pro";
+src:url("00000000000000007735ba14_31_l.woff2") format("woff2"),url("00000000000000007735ba14_31_d.woff2") format("woff"),url("00000000000000007735ba14_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"itc-avant-garde-gothic-pro";
+src:url("00000000000000007735ba1d_31_l.woff2") format("woff2"),url("00000000000000007735ba1d_31_d.woff2") format("woff"),url("00000000000000007735ba1d_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"itc-avant-garde-gothic-pro";
+src:url("0000000000000000775aa974_31_l.woff2") format("woff2"),url("0000000000000000775aa974_31_d.woff2") format("woff"),url("0000000000000000775aa974_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"itc-avant-garde-gothic-pro";
+src:url("0000000000000000775aa970_31_l.woff2") format("woff2"),url("0000000000000000775aa970_31_d.woff2") format("woff"),url("0000000000000000775aa970_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("00000000000000007735bb48_31_l.woff2") format("woff2"),url("00000000000000007735bb48_31_d.woff2") format("woff"),url("00000000000000007735bb48_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("00000000000000007735bb53_31_l.woff2") format("woff2"),url("00000000000000007735bb53_31_d.woff2") format("woff"),url("00000000000000007735bb53_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("00000000000000007735bb6a_31_l.woff2") format("woff2"),url("00000000000000007735bb6a_31_d.woff2") format("woff"),url("00000000000000007735bb6a_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-display";
+src:url("00000000000000007735bb6c_31_l.woff2") format("woff2"),url("00000000000000007735bb6c_31_d.woff2") format("woff"),url("00000000000000007735bb6c_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-text";
+src:url("00000000000000007735bb33_31_l.woff2") format("woff2"),url("00000000000000007735bb33_31_d.woff2") format("woff"),url("00000000000000007735bb33_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-text";
+src:url("00000000000000007735bb35_31_l.woff2") format("woff2"),url("00000000000000007735bb35_31_d.woff2") format("woff"),url("00000000000000007735bb35_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-text";
+src:url("00000000000000007735bb39_31_l.woff2") format("woff2"),url("00000000000000007735bb39_31_d.woff2") format("woff"),url("00000000000000007735bb39_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-text";
+src:url("00000000000000007735bb3d_31_l.woff2") format("woff2"),url("00000000000000007735bb3d_31_d.woff2") format("woff"),url("00000000000000007735bb3d_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next";
+src:url("00000000000000007735ba3f_31_l.woff2") format("woff2"),url("00000000000000007735ba3f_31_d.woff2") format("woff"),url("00000000000000007735ba3f_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next";
+src:url("00000000000000007735ba6d_31_l.woff2") format("woff2"),url("00000000000000007735ba6d_31_d.woff2") format("woff"),url("00000000000000007735ba6d_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next";
+src:url("00000000000000007735ba65_31_l.woff2") format("woff2"),url("00000000000000007735ba65_31_d.woff2") format("woff"),url("00000000000000007735ba65_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next";
+src:url("00000000000000007735ba66_31_l.woff2") format("woff2"),url("00000000000000007735ba66_31_d.woff2") format("woff"),url("00000000000000007735ba66_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next-compressed";
+src:url("00000000000000007735ba41_31_l.woff2") format("woff2"),url("00000000000000007735ba41_31_d.woff2") format("woff"),url("00000000000000007735ba41_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next-compressed";
+src:url("00000000000000007735ba75_31_l.woff2") format("woff2"),url("00000000000000007735ba75_31_d.woff2") format("woff"),url("00000000000000007735ba75_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next-condensed";
+src:url("00000000000000007735ba43_31_l.woff2") format("woff2"),url("00000000000000007735ba43_31_d.woff2") format("woff"),url("00000000000000007735ba43_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next-condensed";
+src:url("00000000000000007735ba50_31_l.woff2") format("woff2"),url("00000000000000007735ba50_31_d.woff2") format("woff"),url("00000000000000007735ba50_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next-condensed";
+src:url("00000000000000007735ba49_31_l.woff2") format("woff2"),url("00000000000000007735ba49_31_d.woff2") format("woff"),url("00000000000000007735ba49_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"trade-gothic-next-condensed";
+src:url("00000000000000007735ba72_31_l.woff2") format("woff2"),url("00000000000000007735ba72_31_d.woff2") format("woff"),url("00000000000000007735ba72_31_a.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"tgn-soft-round-comp";
+src:url("00000000000000007735ba4d_31_l.woff2") format("woff2"),url("00000000000000007735ba4d_31_d.woff2") format("woff"),url("00000000000000007735ba4d_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"tgn-soft-round-comp";
+src:url("00000000000000007735ba42_31_l.woff2") format("woff2"),url("00000000000000007735ba42_31_d.woff2") format("woff"),url("00000000000000007735ba42_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"tgn-soft-round";
+src:url("00000000000000007735ba46_31_l.woff2") format("woff2"),url("00000000000000007735ba46_31_d.woff2") format("woff"),url("00000000000000007735ba46_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"tgn-soft-round";
+src:url("00000000000000007735ba6c_31_l.woff2") format("woff2"),url("00000000000000007735ba6c_31_d.woff2") format("woff"),url("00000000000000007735ba6c_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"tgn-soft-round-con";
+src:url("00000000000000007735ba64_31_l.woff2") format("woff2"),url("00000000000000007735ba64_31_d.woff2") format("woff"),url("00000000000000007735ba64_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"tgn-soft-round-con";
+src:url("00000000000000007735ba47_31_l.woff2") format("woff2"),url("00000000000000007735ba47_31_d.woff2") format("woff"),url("00000000000000007735ba47_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"secret-service-typewriter";
+src:url("000000000000000077588c32_31_l.woff2") format("woff2"),url("000000000000000077588c32_31_d.woff2") format("woff"),url("000000000000000077588c32_31_a.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-john-doe { font-family: "john-doe",sans-serif; }
+.tk-prestige-elite-std { font-family: "prestige-elite-std",monospace; }
+.tk-typeka { font-family: "typeka",sans-serif; }
+.tk-itc-avant-garde-gothic-pro { font-family: "itc-avant-garde-gothic-pro",sans-serif; }
+.tk-neue-haas-grotesk-display { font-family: "neue-haas-grotesk-display",sans-serif; }
+.tk-neue-haas-grotesk-text { font-family: "neue-haas-grotesk-text",sans-serif; }
+.tk-trade-gothic-next { font-family: "trade-gothic-next",sans-serif; }
+.tk-trade-gothic-next-compressed { font-family: "trade-gothic-next-compressed",sans-serif; }
+.tk-trade-gothic-next-condensed { font-family: "trade-gothic-next-condensed",sans-serif; }
+.tk-tgn-soft-round-comp { font-family: "tgn-soft-round-comp",sans-serif; }
+.tk-tgn-soft-round { font-family: "tgn-soft-round",sans-serif; }
+.tk-tgn-soft-round-con { font-family: "tgn-soft-round-con",sans-serif; }
+.tk-secret-service-typewriter { font-family: "secret-service-typewriter",sans-serif; }

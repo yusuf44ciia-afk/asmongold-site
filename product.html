@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Asmongold Merch | Product</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="assets/css/nicolas-top-notch-site-eb51e8.webflow.shared.2dd855471.min.css" rel="stylesheet" type="text/css"/>
+<script src="assets/libs/webfont.js" type="text/javascript"></script>
+<script type="text/javascript">WebFont.load({google:{families:["Host Grotesk:300,400,500,600,700"]}});</script>
+<link href="assets/fonts/typekit/biw5ksl.css" rel="stylesheet" type="text/css"/>
+<link href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" rel="shortcut icon" type="image/gif"/>
+<style>
+:root{
+  --matte-black:#202020;
+  --soft-grey:#f3f3f3;
+  --tech-red:#ff564a;
+  --hairline:rgba(32,32,32,0.12);
+  --hairline-strong:rgba(32,32,32,0.25);
+}
+
+::-webkit-scrollbar{display:none}
+*{-ms-overflow-style:none;scrollbar-width:none;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+::selection{background:#1e1e1e;color:#e7e7e7}
+html,body{margin:0;padding:0}
+body{
+  background:var(--soft-grey);
+  color:var(--matte-black);
+  font-family:"host-grotesk","Host Grotesk",sans-serif;
+  font-size:14px;
+  line-height:1.4;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+
+/* ─────────────── CRT OVERLAY ─────────────── */
+.crt{
+  opacity:.17;
+  z-index:9999;
+  pointer-events:none;
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+}
+.crt::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom,rgba(18,16,16,0) 50%,rgba(0,0,0,.25) 50%);
+  background-size:100% 4px;
+  z-index:2;
+}
+.crt::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle,rgba(0,0,0,0) 50%,rgba(0,0,0,.4) 100%);
+  z-index:2;
+  animation:flick .15s infinite;
+}
+@keyframes flick{0%{opacity:.95}50%{opacity:.92}100%{opacity:.96}}
+
+/* ─────────────── TYPOGRAPHY ─────────────── */
+.eyebrow{
+  text-transform:uppercase;
+  font-family:"Host Grotesk",sans-serif;
+  font-size:clamp(.625rem,.55vw,.75rem);
+  font-weight:500;
+  letter-spacing:.08em;
+  line-height:1;
+  margin:0;
+}
+.eyebrow.dim{opacity:.5}
+.eyebrow.red{color:var(--tech-red)}
+
+.display{
+  font-family:Easegeometricb,Impact,sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:-.03em;
+  line-height:.9;
+  margin:0;
+  filter:blur(.5px);
+}
+.display.huge{
+  font-size:clamp(3rem,7vw,7rem);
+  filter:blur(2px);
+}
+.display.xxl{
+  font-size:clamp(5rem,12vw,14rem);
+  filter:blur(4px);
+}
+
+.body-text{
+  font-size:clamp(.8rem,.7rem + .3vw,.95rem);
+  line-height:1.65;
+  font-weight:400;
+  color:rgba(32,32,32,.7);
+  max-width:38ch;
+}
+
+/* ─────────────── NAV ─────────────── */
+.nav{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:100;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+  padding:1.25em 1.5em;
+  background:rgba(243,243,243,.85);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--hairline);
+}
+.nav-l{justify-self:start;display:flex;gap:1.5em;align-items:center}
+.nav-c{justify-self:center}
+.nav-r{justify-self:end;display:flex;gap:1.5em;align-items:center}
+.nav-link{
+  position:relative;
+  transition:opacity .3s;
+}
+.nav-link:hover{opacity:.5}
+.nav-logo{
+  font-family:Easegeometricb,Impact,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:-.02em;
+  font-size:1rem;
+  filter:blur(.3px);
+}
+.cart-trigger{
+  display:flex;
+  align-items:center;
+  gap:.4em;
+  padding:.5em .9em;
+  border:1px solid var(--matte-black);
+  background:transparent;
+  color:var(--matte-black);
+  transition:all .3s;
+}
+.cart-trigger:hover{background:var(--matte-black);color:var(--soft-grey)}
+.cart-count-badge{
+  background:var(--tech-red);
+  color:#fff;
+  width:1.4em;
+  height:1.4em;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.65rem;
+  font-weight:600;
+}
+
+/* ─────────────── BREADCRUMB ─────────────── */
+.breadcrumb{
+  padding:6em 1.5em 1.5em;
+  display:flex;
+  gap:.6em;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.breadcrumb a{transition:opacity .3s}
+.breadcrumb a:hover{opacity:.5}
+.breadcrumb .sep{opacity:.3}
+.breadcrumb .current{color:var(--tech-red)}
+
+/* ─────────────── PRODUCT MAIN LAYOUT ─────────────── */
+.product-main{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:0;
+  padding:0 1.5em 4em;
+  position:relative;
+}
+
+/* ─────────────── GALLERY ─────────────── */
+.gallery{
+  position:relative;
+  display:grid;
+  grid-template-columns:80px 1fr;
+  gap:1em;
+}
+.thumbs{
+  display:flex;
+  flex-direction:column;
+  gap:.6em;
+}
+.thumb{
+  width:80px;
+  height:100px;
+  border:1px solid var(--hairline);
+  background:#fff;
+  cursor:pointer;
+  overflow:hidden;
+  position:relative;
+  transition:border-color .3s;
+}
+.thumb:hover{border-color:var(--hairline-strong)}
+.thumb.active{border-color:var(--matte-black);border-width:2px}
+.thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(.3);
+  transition:filter .4s;
+}
+.thumb.active img{filter:grayscale(0)}
+
+.main-image{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--hairline);
+  aspect-ratio:4/5;
+  overflow:hidden;
+  cursor:zoom-in;
+}
+.main-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .8s cubic-bezier(.625,.05,0,1);
+}
+.main-image:hover img{transform:scale(1.08)}
+.image-tag{
+  position:absolute;
+  top:1em;
+  left:1em;
+  background:var(--matte-black);
+  color:var(--soft-grey);
+  padding:.4em .8em;
+  font-size:.6rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  z-index:2;
+}
+.image-counter{
+  position:absolute;
+  bottom:1em;
+  right:1em;
+  background:rgba(255,255,255,.9);
+  padding:.4em .8em;
+  font-size:.65rem;
+  letter-spacing:.1em;
+  z-index:2;
+}
+
+/* ─────────────── PRODUCT INFO PANEL ─────────────── */
+.info-panel{
+  padding:0 0 0 3em;
+  position:sticky;
+  top:6em;
+  align-self:start;
+  display:flex;
+  flex-direction:column;
+  gap:1.75em;
+}
+.info-meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-bottom:1em;
+  border-bottom:1px solid var(--hairline);
+}
+.info-cat{display:flex;gap:1em;align-items:center}
+
+.product-title{
+  font-family:Easegeometricb,Impact,sans-serif;
+  font-size:clamp(2rem,3.5vw,3.5rem);
+  text-transform:uppercase;
+  letter-spacing:-.025em;
+  line-height:.95;
+  margin:0;
+  filter:blur(1px);
+}
+
+.price-row{
+  display:flex;
+  align-items:baseline;
+  gap:1em;
+}
+.price-now{
+  font-family:Easegeometricb,Impact,sans-serif;
+  font-size:1.8rem;
+  color:var(--tech-red);
+  filter:blur(.3px);
+  letter-spacing:-.02em;
+}
+.price-tax{
+  opacity:.5;
+  font-size:.65rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.short-desc{
+  font-size:.85rem;
+  line-height:1.7;
+  color:rgba(32,32,32,.75);
+  max-width:36ch;
+}
+
+/* ─────────────── OPTIONS ─────────────── */
+.opt-group{
+  display:flex;
+  flex-direction:column;
+  gap:.7em;
+}
+.opt-label{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.opt-label-link{
+  font-size:.6rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  cursor:pointer;
+  transition:color .3s;
+}
+.opt-label-link:hover{color:var(--tech-red)}
+
+/* COLOR SWATCHES */
+.swatches{
+  display:flex;
+  gap:.6em;
+  align-items:center;
+}
+.swatch{
+  width:32px;
+  height:32px;
+  border:2px solid transparent;
+  cursor:pointer;
+  position:relative;
+  transition:all .3s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.swatch::after{
+  content:"";
+  position:absolute;
+  inset:2px;
+  border:1px solid rgba(32,32,32,.15);
+}
+.swatch:hover{transform:scale(1.08)}
+.swatch.active{border-color:var(--matte-black)}
+.swatch.active::after{border-color:transparent}
+.swatch-name{
+  margin-left:.5em;
+  font-size:.65rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  opacity:.7;
+}
+
+/* SIZE BUTTONS */
+.sizes{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:.4em;
+}
+.size{
+  background:#fff;
+  border:1px solid var(--hairline-strong);
+  color:var(--matte-black);
+  padding:1em 0;
+  font-size:.7rem;
+  font-weight:500;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  transition:all .25s;
+  position:relative;
+}
+.size:hover{border-color:var(--matte-black);background:#fafafa}
+.size.active{
+  background:var(--matte-black);
+  color:var(--soft-grey);
+  border-color:var(--matte-black);
+}
+.size.disabled{
+  opacity:.3;
+  text-decoration:line-through;
+  cursor:not-allowed;
+  pointer-events:none;
+}
+
+/* QUANTITY */
+.qty-row{
+  display:flex;
+  align-items:center;
+  gap:1em;
+}
+.qty-stepper{
+  display:flex;
+  align-items:center;
+  border:1px solid var(--matte-black);
+  background:#fff;
+  width:fit-content;
+}
+.qty-stepper button{
+  background:transparent;
+  border:none;
+  color:var(--matte-black);
+  width:2.5em;
+  height:2.5em;
+  font-size:1rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:all .25s;
+}
+.qty-stepper button:hover{background:var(--matte-black);color:var(--soft-grey)}
+.qty-val{
+  min-width:2.5em;
+  text-align:center;
+  font-size:.8rem;
+  font-weight:600;
+  letter-spacing:.05em;
+}
+.stock-info{
+  display:flex;
+  align-items:center;
+  gap:.5em;
+  font-size:.65rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  opacity:.7;
+}
+.stock-dot{
+  width:7px;
+  height:7px;
+  background:#3aa760;
+  border-radius:50%;
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* ADD TO BAG */
+.add-bag{
+  background:var(--matte-black);
+  color:var(--soft-grey);
+  border:1px solid var(--matte-black);
+  padding:1.3em 2em;
+  font-size:.75rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  transition:all .35s cubic-bezier(.625,.05,0,1);
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.add-bag::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:var(--tech-red);
+  transform:translateY(101%);
+  transition:transform .4s cubic-bezier(.625,.05,0,1);
+  z-index:0;
+}
+.add-bag:hover::before{transform:translateY(0)}
+.add-bag:hover{color:#fff;border-color:var(--tech-red)}
+.add-bag span{position:relative;z-index:1}
+.add-bag .arrow{
+  display:inline-block;
+  transition:transform .4s;
+}
+.add-bag:hover .arrow{transform:translateX(.4em)}
+.add-bag.added{background:var(--tech-red);color:#fff;border-color:var(--tech-red)}
+
+/* SHIPPING INFO */
+.ship-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--hairline);
+  border:1px solid var(--hairline);
+}
+.ship-cell{
+  background:var(--soft-grey);
+  padding:1em;
+  display:flex;
+  flex-direction:column;
+  gap:.3em;
+}
+.ship-cell strong{
+  font-size:.65rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-weight:600;
+}
+.ship-cell span{
+  font-size:.7rem;
+  opacity:.6;
+}
+
+/* ─────────────── TABS SECTION ─────────────── */
+.tabs-section{
+  padding:5em 1.5em;
+  border-top:1px solid var(--hairline);
+  margin-top:3em;
+}
+.tabs-header{
+  display:flex;
+  gap:0;
+  border-bottom:1px solid var(--hairline);
+  margin-bottom:3em;
+  flex-wrap:wrap;
+}
+.tab{
+  background:transparent;
+  border:none;
+  padding:1.2em 2em 1.2em 0;
+  margin-right:2em;
+  font-size:.7rem;
+  font-weight:500;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  color:var(--matte-black);
+  position:relative;
+  transition:opacity .3s;
+}
+.tab::after{
+  content:"";
+  position:absolute;
+  bottom:-1px;
+  left:0;
+  right:2em;
+  height:2px;
+  background:var(--matte-black);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .4s cubic-bezier(.625,.05,0,1);
+}
+.tab.active::after{transform:scaleX(1)}
+.tab:not(.active){opacity:.4}
+.tab:not(.active):hover{opacity:.7}
+
+.tab-content{
+  display:none;
+  max-width:65ch;
+  font-size:.85rem;
+  line-height:1.8;
+  color:rgba(32,32,32,.75);
+}
+.tab-content.active{display:block;animation:fadeIn .5s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.tab-content h4{
+  font-family:Easegeometricb,Impact,sans-serif;
+  text-transform:uppercase;
+  font-size:1rem;
+  letter-spacing:-.01em;
+  margin:1.5em 0 .5em;
+  color:var(--matte-black);
+  filter:blur(.3px);
+}
+.tab-content h4:first-child{margin-top:0}
+.tab-content ul{padding-left:0;list-style:none}
+.tab-content li{
+  padding:.6em 0;
+  border-bottom:1px solid var(--hairline);
+  display:flex;
+  justify-content:space-between;
+  font-size:.8rem;
+}
+.tab-content li:last-child{border:none}
+.tab-content li strong{
+  text-transform:uppercase;
+  font-size:.65rem;
+  letter-spacing:.1em;
+  color:var(--matte-black);
+}
+
+/* ─────────────── RELATED PRODUCTS ─────────────── */
+.related{
+  padding:5em 1.5em 6em;
+  border-top:1px solid var(--hairline);
+}
+.related-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  margin-bottom:3em;
+  flex-wrap:wrap;
+  gap:1em;
+}
+.related-title{
+  font-family:Easegeometricb,Impact,sans-serif;
+  font-size:clamp(2rem,4vw,4rem);
+  text-transform:uppercase;
+  letter-spacing:-.025em;
+  line-height:.9;
+  margin:0;
+  filter:blur(1.5px);
+}
+.related-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1.25em;
+}
+.rel-card{
+  background:#fff;
+  border:1px solid var(--hairline);
+  display:flex;
+  flex-direction:column;
+  cursor:pointer;
+  transition:all .4s;
+  position:relative;
+  overflow:hidden;
+}
+.rel-card:hover{
+  border-color:var(--matte-black);
+  transform:translateY(-4px);
+}
+.rel-img{
+  aspect-ratio:1;
+  overflow:hidden;
+  position:relative;
+  background:#f8f8f8;
+}
+.rel-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(.2);
+  transition:all .6s cubic-bezier(.625,.05,0,1);
+}
+.rel-card:hover .rel-img img{
+  filter:grayscale(0);
+  transform:scale(1.06);
+}
+.rel-info{
+  padding:1.2em 1em;
+  display:flex;
+  flex-direction:column;
+  gap:.5em;
+}
+.rel-name{
+  font-size:.75rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  line-height:1.3;
+}
+.rel-price{
+  font-size:.85rem;
+  color:var(--tech-red);
+  font-weight:600;
+}
+.rel-num{
+  font-size:.6rem;
+  opacity:.4;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+/* ─────────────── CART DRAWER ─────────────── */
+.cart-bg{
+  position:fixed;
+  inset:0;
+  background:rgba(32,32,32,.7);
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  z-index:200;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .4s;
+}
+.cart-bg.open{opacity:1;pointer-events:auto}
+
+.cart-drawer{
+  position:fixed;
+  top:0;right:0;
+  width:min(440px,92vw);
+  height:100vh;
+  background:var(--matte-black);
+  color:var(--soft-grey);
+  z-index:210;
+  transform:translateX(100%);
+  transition:transform .55s cubic-bezier(.625,.05,0,1);
+  display:flex;
+  flex-direction:column;
+}
+.cart-drawer.open{transform:translateX(0)}
+
+.cart-head{
+  padding:1.75em;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.cart-head-title{
+  font-family:Easegeometricb,Impact,sans-serif;
+  font-size:1.4rem;
+  text-transform:uppercase;
+  letter-spacing:-.02em;
+  filter:blur(.5px);
+}
+.cart-head-x{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.2);
+  color:var(--soft-grey);
+  width:2em;
+  height:2em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1rem;
+  transition:all .3s;
+}
+.cart-head-x:hover{
+  background:var(--tech-red);
+  border-color:var(--tech-red);
+}
+
+.cart-body{
+  flex:1;
+  overflow-y:auto;
+  padding:1em 1.75em;
+}
+.cart-empty{
+  padding:5em 0;
+  text-align:center;
+}
+.cart-empty-icon{
+  font-size:2.5rem;
+  opacity:.2;
+  margin-bottom:1em;
+  filter:blur(2px);
+}
+.cart-empty-text{
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  opacity:.4;
+}
+
+.cart-item{
+  display:grid;
+  grid-template-columns:80px 1fr;
+  gap:1em;
+  padding:1.25em 0;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  position:relative;
+}
+.cart-item-img{
+  width:80px;
+  height:100px;
+  background:#fff;
+  overflow:hidden;
+}
+.cart-item-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.cart-item-info{
+  display:flex;
+  flex-direction:column;
+  gap:.4em;
+}
+.cart-item-name{
+  font-size:.75rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  line-height:1.3;
+}
+.cart-item-meta{
+  font-size:.6rem;
+  opacity:.5;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  line-height:1.5;
+}
+.cart-item-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:.4em;
+}
+.cart-item-qty{
+  display:flex;
+  align-items:center;
+  border:1px solid rgba(255,255,255,.15);
+}
+.cart-item-qty button{
+  background:transparent;
+  border:none;
+  color:var(--soft-grey);
+  width:1.6em;
+  height:1.6em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.8rem;
+  transition:all .25s;
+}
+.cart-item-qty button:hover{background:rgba(255,255,255,.1)}
+.cart-item-qty span{
+  min-width:1.8em;
+  text-align:center;
+  font-size:.65rem;
+  font-weight:600;
+}
+.cart-item-price{
+  font-size:.8rem;
+  color:var(--tech-red);
+  font-weight:600;
+}
+.cart-item-rm{
+  position:absolute;
+  top:1.25em;
+  right:0;
+  background:transparent;
+  border:none;
+  color:rgba(255,255,255,.3);
+  font-size:.55rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  padding:0;
+  transition:color .25s;
+}
+.cart-item-rm:hover{color:var(--tech-red)}
+
+.cart-foot{
+  padding:1.75em;
+  border-top:1px solid rgba(255,255,255,.1);
+  display:flex;
+  flex-direction:column;
+  gap:1em;
+}
+.cart-row{
+  display:flex;
+  justify-content:space-between;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+.cart-row.dim{opacity:.5}
+.cart-row.total{
+  font-size:1rem;
+  padding-top:1em;
+  border-top:1px solid rgba(255,255,255,.1);
+  margin-top:.5em;
+}
+.cart-row.total .v{
+  color:var(--tech-red);
+  font-weight:600;
+  font-family:Easegeometricb,Impact,sans-serif;
+  font-size:1.4rem;
+  filter:blur(.3px);
+}
+.checkout-btn{
+  background:var(--soft-grey);
+  color:var(--matte-black);
+  border:none;
+  padding:1.3em;
+  font-size:.75rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  transition:all .35s;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.checkout-btn:hover{background:var(--tech-red);color:#fff}
+.cart-secure{
+  text-align:center;
+  font-size:.55rem;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  opacity:.4;
+}
+
+/* ─────────────── RESPONSIVE ─────────────── */
+@media(max-width:1100px){
+  .product-main{grid-template-columns:1.3fr 1fr}
+  .info-panel{padding-left:2em}
+}
+@media(max-width:900px){
+  .product-main{grid-template-columns:1fr;gap:3em}
+  .info-panel{position:relative;top:0;padding-left:0}
+  .gallery{grid-template-columns:1fr}
+  .thumbs{flex-direction:row;order:2;overflow-x:auto}
+  .thumb{flex-shrink:0;width:70px;height:90px}
+  .related-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .nav{grid-template-columns:auto 1fr;padding:1em}
+  .nav-l{display:none}
+  .nav-c{justify-self:start}
+  .product-main{padding:0 1em 3em}
+  .breadcrumb{padding:5em 1em 1em}
+  .tabs-section,.related{padding:3em 1em}
+  .sizes{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+
+<!-- ═══════════════ STREETWEAR DROP OVERRIDE ═══════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --matte-black:#f5f5f2;
+    --soft-grey:#000;
+    --tech-red:#ff2d1a;
+    --hairline:rgba(255,255,255,.10);
+    --hairline-strong:rgba(255,255,255,.28);
+  }
+  body{
+    background:#000;
+    color:#f5f5f2;
+    font-family:"JetBrains Mono","Host Grotesk",sans-serif;
+    font-size:13px;
+    letter-spacing:.02em;
+  }
+  ::selection{background:var(--tech-red);color:#000}
+
+  /* NAV */
+  .nav{
+    background:#000;
+    border-bottom:1px solid var(--hairline);
+    padding:1em 1.5em;
+  }
+  .nav-logo{
+    font-family:"Anton","Archivo Black",Impact,sans-serif;
+    font-weight:400;
+    letter-spacing:.06em;
+    font-size:1.4rem;
+  }
+  .nav-link{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+  .cart-trigger{
+    background:var(--tech-red);
+    color:#000;
+    border:none;
+    font-weight:700;
+    letter-spacing:.15em;
+    padding:.7em 1.1em;
+    text-transform:uppercase;
+  }
+  .cart-trigger:hover{background:#fff;color:#000}
+  .cart-count-badge{background:#000;color:#fff}
+
+  /* BREADCRUMB */
+  .breadcrumb{
+    background:#000;
+    border-bottom:1px solid var(--hairline);
+    font-size:.65rem;
+    letter-spacing:.22em;
+    padding:.9em 1.5em;
+    text-transform:uppercase;
+  }
+  .breadcrumb .current{color:var(--tech-red)}
+
+  /* MAIN IMAGE — FULL-BLEED */
+  .main-image{
+    background:#0a0a0a;
+    border:none;
+    aspect-ratio:4/5;
+    outline:1px solid var(--hairline);
+  }
+  .main-image img{filter:contrast(1.05) saturate(.95)}
+  .thumb{background:#0a0a0a;border:1px solid var(--hairline)}
+  .thumb.active{border-color:var(--tech-red);border-width:2px}
+
+  /* LOUD DROP BADGE */
+  .image-tag{
+    background:var(--tech-red);
+    color:#000;
+    font-family:"Anton",Impact,sans-serif;
+    font-size:.95rem;
+    letter-spacing:.15em;
+    padding:.35em .9em;
+    border-radius:0;
+    box-shadow:4px 4px 0 #000, 4px 4px 0 1px rgba(255,255,255,.3);
+  }
+  .image-counter{
+    background:#fff;color:#000;font-family:"JetBrains Mono",monospace;
+    font-weight:700;font-size:.7rem;
+  }
+
+  /* TITOLO PRODOTTO */
+  .product-title{
+    font-family:"Anton","Archivo Black",Impact,sans-serif !important;
+    font-size:clamp(3rem,6vw,6rem) !important;
+    letter-spacing:-.01em;
+    line-height:.9;
+    text-transform:uppercase;
+    color:#fff;
+  }
+  .info-meta{border-bottom:1px solid var(--hairline);color:#aaa;font-size:.65rem;letter-spacing:.2em}
+  .eyebrow{letter-spacing:.22em;font-size:.65rem;color:#888}
+  .eyebrow.red{color:var(--tech-red);font-weight:700}
+
+  /* PREZZO */
+  .price-row{align-items:baseline;gap:1em}
+  .price-now{
+    font-family:"Anton",Impact,sans-serif;
+    color:var(--tech-red);
+    font-size:clamp(2rem,3.5vw,3rem);
+    letter-spacing:0;
+  }
+  .price-tax{color:#666;font-size:.6rem;letter-spacing:.18em}
+  .short-desc{color:#cfcfcf;font-size:.85rem;line-height:1.55}
+
+  /* SIZE + SWATCH + QTY */
+  .opt-label{color:#888;font-size:.65rem;letter-spacing:.22em}
+  .opt-label-link{color:var(--tech-red)}
+  .size{
+    background:#0a0a0a;
+    border:1px solid var(--hairline-strong);
+    color:#f5f5f2;
+    font-family:"JetBrains Mono",monospace;
+    font-weight:700;
+    border-radius:0;
+    transition:all .2s;
+  }
+  .size:hover{background:#1a1a1a;border-color:#fff}
+  .size.active{background:var(--tech-red);border-color:var(--tech-red);color:#000}
+  .size.disabled{opacity:.25;text-decoration:line-through}
+  .swatch{border:2px solid var(--hairline-strong)}
+  .swatch.active{border-color:var(--tech-red)}
+  .qty-stepper{background:#0a0a0a;border:1px solid var(--hairline-strong)}
+  .qty-stepper button{color:#fff}
+  .qty-stepper button:hover{background:var(--tech-red);color:#000}
+  .stock-info{color:#9ee37d;font-size:.65rem;letter-spacing:.2em}
+  .stock-dot{background:#9ee37d;box-shadow:0 0 8px #9ee37d}
+
+  /* ADD TO BAG */
+  .add-bag{
+    background:#fff;
+    color:#000;
+    border:none;
+    font-family:"Anton",Impact,sans-serif;
+    font-size:1.25rem;
+    letter-spacing:.15em;
+    padding:1.3em 1.5em;
+    border-radius:0;
+    position:relative;
+    overflow:hidden;
+  }
+  .add-bag::before{background:var(--tech-red)}
+  .add-bag:hover{color:#000}
+
+  /* TABS / STORY */
+  .tabs-nav,.tab-trigger{border-color:var(--hairline)}
+  .tab-trigger{color:#888;letter-spacing:.2em;font-size:.7rem;font-weight:700}
+  .tab-trigger.active{color:#fff;border-bottom:2px solid var(--tech-red)}
+  .tab-content h3,.tabs-section h3{
+    font-family:"Anton",Impact,sans-serif;color:#fff;letter-spacing:.04em;
+  }
+  .tab-content p,.tab-content li{color:#cfcfcf}
+
+  /* RELATED */
+  .related h2,.you-might-like h2{
+    font-family:"Anton","Archivo Black",Impact,sans-serif !important;
+    font-size:clamp(3rem,6vw,5rem) !important;
+    text-transform:uppercase;color:#fff;line-height:.9;
+  }
+  .related-card,.ym-card{
+    background:#0a0a0a;
+    border:1px solid var(--hairline);
+    transition:all .25s;
+  }
+  .related-card:hover,.ym-card:hover{border-color:var(--tech-red);transform:translateY(-4px)}
+  .related-card img,.ym-card img{filter:contrast(1.05)}
+
+  /* FOOTER INFO CHIPS (shipping/returns…) */
+  .info-chips,.product-info-list{border-color:var(--hairline)}
+  .info-chips strong,.product-info-list strong{color:#fff;letter-spacing:.18em;font-size:.65rem}
+
+  /* CART DRAWER */
+  .cart-drawer,.cart-panel{background:#0a0a0a;color:#f5f5f2;border-left:1px solid var(--hairline)}
+  .cart-drawer h3{font-family:"Anton",Impact,sans-serif;color:#fff}
+  .checkout-btn,.btn-checkout{
+    background:var(--tech-red);color:#000;font-family:"Anton",Impact,sans-serif;
+    letter-spacing:.2em;border-radius:0;
+  }
+
+  /* CRT overlay — subtler on black */
+  .crt{opacity:.08}
+
+  /* ═════════ LAYOUT REWORK ═════════ */
+
+  /* MARQUEE STRIP */
+  .drop-marquee{
+    background:var(--tech-red);
+    color:#000;
+    font-family:"Anton",Impact,sans-serif;
+    font-size:.9rem;
+    letter-spacing:.25em;
+    padding:.55em 0;
+    overflow:hidden;
+    white-space:nowrap;
+    border-bottom:1px solid #000;
+  }
+  .drop-marquee-track{
+    display:inline-block;
+    animation:marquee 35s linear infinite;
+    padding-left:100%;
+  }
+  .drop-marquee span{padding:0 2em;position:relative}
+  .drop-marquee span::after{
+    content:"◆";position:absolute;right:-.6em;top:50%;transform:translateY(-50%);
+    font-size:.5em;opacity:.6;
+  }
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* HERO ASIMMETRICO */
+  .product-main{
+    display:grid !important;
+    grid-template-columns:1.6fr 1fr !important;
+    gap:0 !important;
+    padding:0 !important;
+    max-width:none !important;
+    margin:0 !important;
+    min-height:calc(100vh - 120px);
+    position:relative;
+  }
+  .product-main::before{
+    content:attr(data-drop-num);
+    position:absolute;
+    top:2vh;right:2vw;
+    font-family:"Anton",Impact,sans-serif;
+    font-size:clamp(8rem,22vw,22rem);
+    line-height:.8;
+    color:rgba(255,255,255,.04);
+    pointer-events:none;
+    z-index:0;
+    letter-spacing:-.04em;
+    user-select:none;
+  }
+
+  /* GALLERY — FULL BLEED */
+  .gallery{
+    display:flex !important;
+    flex-direction:row !important;
+    gap:.5em;
+    padding:0 !important;
+    background:#0a0a0a;
+    position:relative;
+  }
+  .thumbs{
+    flex-direction:column !important;
+    order:-1 !important;
+    width:90px;
+    padding:1em .5em 1em 1em;
+    gap:.5em !important;
+    max-height:none !important;
+  }
+  .thumb{
+    width:70px;
+    height:85px;
+    aspect-ratio:unset !important;
+    flex-shrink:0;
+  }
+  .main-image{
+    aspect-ratio:unset !important;
+    flex:1;
+    min-height:calc(100vh - 120px);
+    outline:none !important;
+    background:linear-gradient(135deg,#0f0f0f 0%,#050505 100%);
+  }
+  .main-image img{
+    object-fit:cover !important;
+    object-position:center;
+  }
+  .image-tag{
+    top:2em !important;left:2em !important;
+    font-size:1.1rem !important;
+    padding:.5em 1.1em !important;
+  }
+  .image-counter{
+    bottom:2em !important;right:2em !important;
+    font-size:.75rem !important;
+    padding:.55em 1em !important;
+    background:rgba(255,255,255,.96) !important;
+  }
+
+  /* INFO PANEL — CARD SCURA DENSA */
+  .info-panel{
+    padding:3em 3em 8em 3em !important;
+    position:relative !important;
+    top:0 !important;
+    background:linear-gradient(180deg,#0a0a0a 0%,#000 100%);
+    border-left:1px solid var(--hairline);
+    display:flex !important;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:1.4em !important;
+    z-index:1;
+  }
+  .info-panel .product-title{margin:0 !important}
+  .info-meta{
+    padding-bottom:.8em !important;
+    gap:1em;
+  }
+  .info-meta .eyebrow{font-weight:700}
+
+  /* PREZZO — HUGE */
+  .price-row{
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:.2em !important;
+    padding:.8em 0 !important;
+    border-top:1px solid var(--hairline);
+    border-bottom:1px solid var(--hairline);
+  }
+  .price-now{
+    font-size:clamp(2.6rem,4.5vw,4rem) !important;
+    line-height:.9;
+  }
+
+  /* SIZES — PILL FULL GRID */
+  .sizes{
+    display:grid !important;
+    grid-template-columns:repeat(6,1fr) !important;
+    gap:.4em !important;
+  }
+  .size{
+    aspect-ratio:1 !important;
+    width:auto !important;
+    height:auto !important;
+    font-size:.85rem !important;
+    font-weight:800 !important;
+  }
+
+  /* ADD TO BAG — STICKY FULL WIDTH BOTTOM */
+  .add-bag{
+    position:sticky;
+    bottom:1em;
+    width:100% !important;
+    display:flex !important;
+    align-items:center;
+    justify-content:space-between;
+    padding:1.2em 1.5em !important;
+    font-size:1.3rem !important;
+    box-shadow:0 8px 24px rgba(255,45,26,.25);
+    z-index:5;
+  }
+  .add-bag .arrow{
+    font-family:"Anton",Impact,sans-serif;
+    font-size:1.6rem;
+    transition:transform .3s;
+  }
+  .add-bag:hover .arrow{transform:translateX(8px)}
+
+  /* SHIPPING GRID */
+  .ship-grid{
+    display:grid !important;
+    grid-template-columns:repeat(2,1fr) !important;
+    gap:1px !important;
+    background:var(--hairline);
+    border:1px solid var(--hairline);
+    margin-top:1em;
+  }
+  .ship-cell{
+    background:#050505;
+    padding:1em !important;
+    display:flex;
+    flex-direction:column;
+    gap:.3em;
+  }
+  .ship-cell strong{
+    font-family:"Anton",Impact,sans-serif;
+    color:var(--tech-red) !important;
+    font-size:.8rem !important;
+    letter-spacing:.15em !important;
+  }
+  .ship-cell span{color:#888;font-size:.75rem}
+
+  /* TABS — FULL WIDTH DARK */
+  .tabs-section{
+    background:#050505;
+    padding:6em 3em !important;
+    max-width:none !important;
+    border-top:1px solid var(--hairline);
+  }
+  .tabs-header{
+    display:flex;
+    gap:0 !important;
+    border-bottom:1px solid var(--hairline-strong);
+    margin-bottom:3em;
+  }
+  .tab{
+    padding:1.2em 1.8em !important;
+    background:transparent !important;
+    border:none !important;
+    border-right:1px solid var(--hairline) !important;
+    color:#666 !important;
+    letter-spacing:.22em !important;
+    font-weight:700;
+    font-size:.7rem !important;
+    text-transform:uppercase;
+  }
+  .tab.active{
+    color:#fff !important;
+    background:#0a0a0a !important;
+    border-bottom:2px solid var(--tech-red) !important;
+  }
+  .tab-content h4{
+    font-family:"Anton",Impact,sans-serif;
+    font-size:1.8rem;
+    color:var(--tech-red);
+    letter-spacing:.1em;
+    margin:0 0 .6em 0;
+  }
+  .tab-content p,.tab-content li{color:#b8b8b8;font-size:.9rem;line-height:1.7}
+
+  /* RELATED */
+  .related{
+    background:#000;
+    padding:6em 3em !important;
+    max-width:none !important;
+    border-top:1px solid var(--hairline);
+  }
+  .related-head{margin-bottom:3em !important}
+  .related-title{
+    font-family:"Anton",Impact,sans-serif !important;
+    font-size:clamp(3rem,8vw,7rem) !important;
+    line-height:.85 !important;
+    letter-spacing:-.01em !important;
+    text-transform:uppercase;
+  }
+  .related-grid{
+    grid-template-columns:repeat(4,1fr) !important;
+    gap:1em !important;
+  }
+
+  /* RESPONSIVE */
+  @media(max-width:960px){
+    .product-main{
+      grid-template-columns:1fr !important;
+      min-height:auto !important;
+    }
+    .gallery{flex-direction:column !important}
+    .thumbs{flex-direction:row !important;width:100% !important;order:2 !important;overflow-x:auto !important}
+    .main-image{min-height:70vh !important}
+    .info-panel{padding:2em 1.5em 6em 1.5em !important;border-left:none !important;border-top:1px solid var(--hairline)}
+    .tabs-section,.related{padding:4em 1.5em !important}
+    .related-grid{grid-template-columns:repeat(2,1fr) !important}
+    .sizes{grid-template-columns:repeat(4,1fr) !important}
+  }
+</style>
+</head>
+<body>
+
+<div class="crt"></div>
+
+<!-- ─────────────── NAV ─────────────── -->
+<nav class="nav">
+  <div class="nav-l">
+    <a href="index.html" class="eyebrow nav-link">← ARTBOARD™</a>
+    <a href="merchandising.html" class="eyebrow nav-link">SHOP</a>
+  </div>
+  <div class="nav-c">
+    <a href="index.html" class="nav-logo">ASMONGOLD</a>
+  </div>
+  <div class="nav-r">
+    <a href="merchandising.html" class="eyebrow nav-link" id="searchLink">SEARCH</a>
+    <button class="cart-trigger eyebrow" onclick="openCart()">
+      <span>BAG</span>
+      <span class="cart-count-badge" id="navBadge">0</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ─────────────── BREADCRUMB ─────────────── -->
+<div class="breadcrumb eyebrow dim">
+  <a href="index.html">HOME</a>
+  <span class="sep">/</span>
+  <a href="merchandising.html">SHOP</a>
+  <span class="sep">/</span>
+  <span class="current" id="bcCat">APPAREL</span>
+  <span class="sep">/</span>
+  <span id="bcName">—</span>
+</div>
+
+<!-- ─────────────── MARQUEE STRIP ─────────────── -->
+<div class="drop-marquee">
+  <div class="drop-marquee-track">
+    <span>DROP 01</span><span>SS / 25</span><span>LIMITED EDITION</span><span>WORLDWIDE SHIPPING</span><span>NEVER RESTOCKED</span><span>ASMONGOLD © OTK</span><span>DROP 01</span><span>SS / 25</span><span>LIMITED EDITION</span><span>WORLDWIDE SHIPPING</span><span>NEVER RESTOCKED</span><span>ASMONGOLD © OTK</span>
+  </div>
+</div>
+
+<!-- ─────────────── PRODUCT MAIN ─────────────── -->
+<div class="product-main" data-drop-num="01">
+
+  <!-- GALLERY -->
+  <div class="gallery">
+    <div class="thumbs" id="thumbs"></div>
+    <div class="main-image" id="zoomBox">
+      <div class="image-tag" id="imgTag">NEW DROP</div>
+      <img id="mainImg" src="" alt=""/>
+      <div class="image-counter eyebrow"><span id="imgCur">01</span> / <span id="imgTot">04</span></div>
+    </div>
+  </div>
+
+  <!-- INFO PANEL -->
+  <aside class="info-panel">
+    <div class="info-meta">
+      <div class="info-cat">
+        <span class="eyebrow dim" id="prodNum">(001)</span>
+        <span class="eyebrow red" id="prodCat">APPAREL</span>
+      </div>
+      <span class="eyebrow dim">SS / 25</span>
+    </div>
+
+    <h1 class="product-title" id="prodTitle">—</h1>
+
+    <div class="price-row">
+      <span class="price-now" id="prodPrice">$0.00</span>
+      <span class="price-tax">TAX INCL. — FREE SHIPPING $80+</span>
+    </div>
+
+    <p class="short-desc" id="prodDesc"></p>
+
+    <!-- COLOR -->
+    <div class="opt-group" id="colorGroup">
+      <div class="opt-label">
+        <span class="eyebrow">COLOR — <span id="colorActive" style="color:var(--tech-red)">—</span></span>
+      </div>
+      <div class="swatches" id="swatches"></div>
+    </div>
+
+    <!-- SIZE -->
+    <div class="opt-group" id="sizeGroup">
+      <div class="opt-label">
+        <span class="eyebrow">SELECT SIZE</span>
+        <span class="opt-label-link">SIZE GUIDE →</span>
+      </div>
+      <div class="sizes" id="sizes"></div>
+    </div>
+
+    <!-- QTY + STOCK -->
+    <div class="qty-row">
+      <div class="opt-group" style="gap:.4em">
+        <span class="eyebrow dim">QUANTITY</span>
+        <div class="qty-stepper">
+          <button onclick="setQty(-1)">−</button>
+          <span class="qty-val" id="qtyVal">1</span>
+          <button onclick="setQty(1)">+</button>
+        </div>
+      </div>
+      <div class="stock-info" style="margin-left:auto;margin-bottom:.4em">
+        <span class="stock-dot"></span>
+        <span>IN STOCK</span>
+      </div>
+    </div>
+
+    <!-- ADD TO BAG -->
+    <button class="add-bag" id="addBtn" onclick="addToBag()">
+      <span>ADD TO BAG</span>
+      <span class="arrow">→</span>
+    </button>
+
+    <!-- SHIPPING INFO GRID -->
+    <div class="ship-grid">
+      <div class="ship-cell">
+        <strong>SHIPPING</strong>
+        <span>2–4 business days</span>
+      </div>
+      <div class="ship-cell">
+        <strong>RETURNS</strong>
+        <span>30 days free</span>
+      </div>
+      <div class="ship-cell">
+        <strong>PAYMENT</strong>
+        <span>Card · PayPal · Klarna</span>
+      </div>
+      <div class="ship-cell">
+        <strong>SUPPORT</strong>
+        <span>24/7 community help</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- ─────────────── TABS ─────────────── -->
+<section class="tabs-section">
+  <div class="tabs-header">
+    <button class="tab active" data-tab="desc">DESCRIPTION</button>
+    <button class="tab" data-tab="size">SIZING</button>
+    <button class="tab" data-tab="ship">SHIPPING & RETURNS</button>
+    <button class="tab" data-tab="care">CARE</button>
+  </div>
+
+  <div class="tab-content active" id="tab-desc">
+    <h4>(THE STORY)</h4>
+    <p id="longDesc">A premium piece engineered for the community that shows up every stream. No hype, no pretense — just quality cuts, heavyweight fabrics, and details that hold up after a thousand washes. Built in collaboration with the OTK family, every drop is limited and never restocked.</p>
+    <h4>(FEATURES)</h4>
+    <ul>
+      <li><strong>Material</strong><span>100% premium ringspun cotton</span></li>
+      <li><strong>Weight</strong><span>240 GSM heavyweight</span></li>
+      <li><strong>Print</strong><span>Plastisol screen print</span></li>
+      <li><strong>Origin</strong><span>Designed in Austin, TX</span></li>
+      <li><strong>Edition</strong><span>Limited drop — never restocked</span></li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="tab-size">
+    <h4>(SIZE GUIDE — INCHES)</h4>
+    <ul>
+      <li><strong>XS</strong><span>Chest 34–36 / Length 27</span></li>
+      <li><strong>S</strong><span>Chest 36–38 / Length 28</span></li>
+      <li><strong>M</strong><span>Chest 38–40 / Length 29</span></li>
+      <li><strong>L</strong><span>Chest 40–42 / Length 30</span></li>
+      <li><strong>XL</strong><span>Chest 42–44 / Length 31</span></li>
+      <li><strong>XXL</strong><span>Chest 44–46 / Length 32</span></li>
+    </ul>
+    <p style="margin-top:1.5em">Fits true to size. If between sizes, size up for a relaxed fit.</p>
+  </div>
+
+  <div class="tab-content" id="tab-ship">
+    <h4>(SHIPPING)</h4>
+    <ul>
+      <li><strong>Standard US</strong><span>$5 · 3–5 days</span></li>
+      <li><strong>Express US</strong><span>$15 · 1–2 days</span></li>
+      <li><strong>International</strong><span>$25 · 7–14 days</span></li>
+      <li><strong>Free shipping</strong><span>Orders over $80</span></li>
+    </ul>
+    <h4>(RETURNS)</h4>
+    <p>Free returns within 30 days of delivery. Items must be unworn, unwashed, with original tags. Refunds processed within 5 business days of receipt.</p>
+  </div>
+
+  <div class="tab-content" id="tab-care">
+    <h4>(CARE INSTRUCTIONS)</h4>
+    <ul>
+      <li><strong>Wash</strong><span>Cold, inside out</span></li>
+      <li><strong>Dry</strong><span>Tumble low or hang</span></li>
+      <li><strong>Iron</strong><span>Low heat, avoid print</span></li>
+      <li><strong>Bleach</strong><span>Do not bleach</span></li>
+      <li><strong>Dry clean</strong><span>Not recommended</span></li>
+    </ul>
+    <p style="margin-top:1.5em">Following these instructions extends the life of your gear and keeps prints sharp.</p>
+  </div>
+</section>
+
+<!-- ─────────────── RELATED ─────────────── -->
+<section class="related">
+  <div class="related-head">
+    <h2 class="related-title">YOU<br/>MIGHT ALSO LIKE</h2>
+    <a href="merchandising.html" class="eyebrow" style="text-decoration:underline;text-underline-offset:4px">VIEW ALL DROPS →</a>
+  </div>
+  <div class="related-grid" id="relatedGrid"></div>
+</section>
+
+<!-- ─────────────── CART DRAWER ─────────────── -->
+<div class="cart-bg" id="cartBg" onclick="closeCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <span class="cart-head-title">YOUR BAG</span>
+    <button class="cart-head-x" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty">
+      <div class="cart-empty-icon">⌬</div>
+      <div class="cart-empty-text">YOUR BAG IS EMPTY</div>
+    </div>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-row dim"><span>SUBTOTAL</span><span id="cartSub">$0.00</span></div>
+    <div class="cart-row dim"><span>SHIPPING</span><span>CALCULATED AT CHECKOUT</span></div>
+    <div class="cart-row total"><span>TOTAL</span><span class="v" id="cartTotal">$0.00</span></div>
+    <button class="checkout-btn" onclick="checkout()">
+      <span>CHECKOUT</span>
+      <span>→</span>
+    </button>
+    <div class="cart-secure">SECURE PAYMENT · ENCRYPTED</div>
+  </div>
+</aside>
+
+<script>
+// ─────────────── PRODUCT DATA ───────────────
+const PRODUCTS = {
+  'classic-tee': {
+    num:'001', title:'CLASSIC TEE', price:34.99, cat:'APPAREL',
+    desc:'The iconic Asmongold tee. Premium ringspun cotton, minimal design, maximum statement. Cut for an everyday relaxed fit.',
+    longDesc:'The Classic Tee is the foundation of every Asmongold drop. Heavyweight 240 GSM ringspun cotton, pre-shrunk for a true fit that holds up wash after wash. The minimal chest logo is screen printed with plastisol for a soft hand and lasting durability.',
+    images:['merch_placeholder_01.jpg','merch_placeholder_04.jpg','merch_placeholder_06.jpg','merch_placeholder_01.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'},{n:'White',h:'#e7e7e7'},{n:'Charcoal',h:'#444'}],
+    sizes:['XS','S','M','L','XL','XXL'],
+    tag:'BESTSELLER'
+  },
+  'otk-hoodie': {
+    num:'002', title:'OTK HOODIE', price:64.99, cat:'APPAREL',
+    desc:'Heavyweight OTK branded hoodie. Built for long gaming sessions and cold raid nights. Oversized fit for layering.',
+    longDesc:'The OTK Hoodie is the warmest piece in the lineup. 380 GSM brushed fleece interior, double-lined hood with custom drawstrings, kangaroo pocket, ribbed cuffs and hem. Embroidered OTK chest logo for a premium finish.',
+    images:['merch_placeholder_02.jpg','merch_placeholder_05.jpg','merch_placeholder_02.jpg','merch_placeholder_05.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'},{n:'Navy',h:'#1a2744'},{n:'Grey',h:'#666'}],
+    sizes:['S','M','L','XL','XXL'],
+    tag:'NEW DROP'
+  },
+  'bald-cap': {
+    num:'003', title:'BALDGOLD CAP', price:29.99, cat:'ACCESSORIES',
+    desc:'Structured snapback with embroidered Asmongold logo. Adjustable for one-size-fits-all coverage.',
+    longDesc:'A 6-panel structured snapback in heavy cotton twill. Embroidered front logo, flat brim, plastic snap closure. Built to last through every meta shift.',
+    images:['merch_placeholder_03.jpg','merch_placeholder_03.jpg','merch_placeholder_03.jpg','merch_placeholder_03.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'},{n:'White',h:'#e7e7e7'}],
+    sizes:null,
+    tag:'STAPLE'
+  },
+  'raid-leader-tee': {
+    num:'004', title:'RAID LEADER TEE', price:34.99, cat:'APPAREL',
+    desc:'For those who lead from the front. Bold typography on premium black cotton. Limited edition.',
+    longDesc:'A statement piece for the raid leaders, the strategists, the ones who call the shots. Oversized back graphic with custom typography, small front chest detail. Heavyweight 240 GSM cotton.',
+    images:['merch_placeholder_04.jpg','merch_placeholder_04.jpg','merch_placeholder_01.jpg','merch_placeholder_06.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'}],
+    sizes:['XS','S','M','L','XL','XXL'],
+    tag:'LIMITED'
+  },
+  'wow-classic-hoodie': {
+    num:'005', title:'WOW CLASSIC HOODIE', price:64.99, cat:'APPAREL',
+    desc:'A tribute to the golden era. Vintage wash hoodie with custom WoW Classic inspired artwork.',
+    longDesc:'Garment-dyed and stone-washed for that lived-in feel from day one. Custom artwork inspired by the golden era of Azeroth. Heavyweight fleece, oversized fit.',
+    images:['merch_placeholder_05.jpg','merch_placeholder_02.jpg','merch_placeholder_05.jpg','merch_placeholder_02.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'},{n:'Forest',h:'#2d4a2d'},{n:'Burgundy',h:'#5c1a1a'}],
+    sizes:['S','M','L','XL','XXL'],
+    tag:'TRIBUTE'
+  },
+  'ya-boy-tee': {
+    num:'006', title:'YA BOY TEE', price:34.99, cat:'APPAREL',
+    desc:"Sup y'all it's me. The catchphrase that started it all, printed on soft jersey cotton.",
+    longDesc:'The phrase you hear at the start of every stream, now wearable. Soft jersey cotton with a vintage feel. Front chest print, small back neck detail. Slim fit.',
+    images:['merch_placeholder_06.jpg','merch_placeholder_01.jpg','merch_placeholder_04.jpg','merch_placeholder_06.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'},{n:'White',h:'#e7e7e7'}],
+    sizes:['XS','S','M','L','XL','XXL'],
+    tag:'ICONIC'
+  },
+  'gaming-mousepad': {
+    num:'007', title:'XXL MOUSEPAD', price:24.99, cat:'ACCESSORIES',
+    desc:'Extended desk mousepad with custom Asmongold artwork. Precision surface for raids and PvP.',
+    longDesc:'90×40 cm of pure desk real estate. Smooth micro-weave surface for fast, accurate tracking. Anti-slip rubber base, stitched edges that never fray. Custom Asmongold artwork printed across the entire surface.',
+    images:['merch_placeholder_07.jpg','merch_placeholder_07.jpg','merch_placeholder_07.jpg','merch_placeholder_07.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'}],
+    sizes:null,
+    tag:'PRO TIER'
+  },
+  'coffee-mug': {
+    num:'008', title:'STREAM MUG', price:19.99, cat:'ACCESSORIES',
+    desc:'Ceramic mug for your Mountain Dew... or coffee. 14 oz, dishwasher safe, iconic branding.',
+    longDesc:'Heavy-weight 14 oz ceramic mug with full-wrap print. Dishwasher and microwave safe. The official vessel of every late-night raid, every morning stream prep.',
+    images:['merch_placeholder_08.jpg','merch_placeholder_08.jpg','merch_placeholder_08.jpg','merch_placeholder_08.jpg'],
+    colors:[{n:'Black',h:'#1a1a1a'},{n:'White',h:'#e7e7e7'}],
+    sizes:null,
+    tag:'STAPLE'
+  }
+};
+
+let state = { id:null, color:null, size:null, qty:1, imgIdx:0 };
+let cart = JSON.parse(localStorage.getItem('asmon_cart') || '[]');
+
+// ─────────────── INIT ───────────────
+function init() {
+  const id = new URLSearchParams(location.search).get('id') || 'classic-tee';
+  const p = PRODUCTS[id];
+  if (!p) return;
+  state.id = id;
+
+  document.title = `Asmongold | ${p.title}`;
+  document.getElementById('prodNum').textContent = `(${p.num})`;
+  document.getElementById('prodCat').textContent = p.cat;
+  document.getElementById('bcCat').textContent = p.cat;
+  document.getElementById('bcName').textContent = p.title;
+  document.getElementById('prodTitle').textContent = p.title;
+  document.getElementById('prodPrice').textContent = `$${p.price.toFixed(2)}`;
+  document.getElementById('prodDesc').textContent = p.desc;
+  document.getElementById('longDesc').textContent = p.longDesc;
+  document.getElementById('imgTag').textContent = p.tag;
+
+  // gallery
+  renderGallery(p);
+
+  // colors
+  const swatchRow = document.getElementById('swatches');
+  swatchRow.innerHTML = '';
+  p.colors.forEach((c, i) => {
+    const sw = document.createElement('div');
+    sw.className = 'swatch' + (i === 0 ? ' active' : '');
+    sw.style.background = c.h;
+    sw.title = c.n;
+    sw.onclick = () => {
+      swatchRow.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
+      sw.classList.add('active');
+      state.color = c.n;
+      document.getElementById('colorActive').textContent = c.n;
+    };
+    swatchRow.appendChild(sw);
+  });
+  state.color = p.colors[0].n;
+  document.getElementById('colorActive').textContent = p.colors[0].n;
+
+  // sizes
+  const sizeRow = document.getElementById('sizes');
+  if (p.sizes) {
+    document.getElementById('sizeGroup').style.display = '';
+    sizeRow.innerHTML = '';
+    p.sizes.forEach((s, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'size' + (i === 2 ? ' active' : '');
+      btn.textContent = s;
+      btn.onclick = () => {
+        sizeRow.querySelectorAll('.size').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.size = s;
+      };
+      sizeRow.appendChild(btn);
+    });
+    state.size = p.sizes[Math.min(2, p.sizes.length - 1)];
+  } else {
+    document.getElementById('sizeGroup').style.display = 'none';
+    state.size = 'ONE SIZE';
+  }
+
+  // related products
+  renderRelated(id);
+
+  // tabs
+  document.querySelectorAll('.tab').forEach(t => {
+    t.onclick = () => {
+      document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      document.getElementById('tab-' + t.dataset.tab).classList.add('active');
+    };
+  });
+
+  updateCartUI();
+}
+
+function renderGallery(p) {
+  const thumbs = document.getElementById('thumbs');
+  thumbs.innerHTML = '';
+  p.images.forEach((img, i) => {
+    const t = document.createElement('div');
+    t.className = 'thumb' + (i === 0 ? ' active' : '');
+    t.innerHTML = `<img src="assets/images/${img}" alt=""/>`;
+    t.onclick = () => {
+      thumbs.querySelectorAll('.thumb').forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      document.getElementById('mainImg').src = `assets/images/${img}`;
+      document.getElementById('imgCur').textContent = String(i + 1).padStart(2, '0');
+      state.imgIdx = i;
+    };
+    thumbs.appendChild(t);
+  });
+  document.getElementById('mainImg').src = `assets/images/${p.images[0]}`;
+  document.getElementById('mainImg').alt = p.title;
+  document.getElementById('imgCur').textContent = '01';
+  document.getElementById('imgTot').textContent = String(p.images.length).padStart(2, '0');
+}
+
+function renderRelated(currentId) {
+  const others = Object.entries(PRODUCTS).filter(([k]) => k !== currentId).slice(0, 4);
+  const grid = document.getElementById('relatedGrid');
+  grid.innerHTML = others.map(([k, p]) => `
+    <a href="product.html?id=${k}" class="rel-card">
+      <div class="rel-img"><img src="assets/images/${p.images[0]}" alt="${p.title}"/></div>
+      <div class="rel-info">
+        <div class="rel-num">(${p.num})</div>
+        <div class="rel-name">${p.title}</div>
+        <div class="rel-price">$${p.price.toFixed(2)}</div>
+      </div>
+    </a>
+  `).join('');
+}
+
+// ─────────────── QTY ───────────────
+function setQty(d) {
+  state.qty = Math.max(1, Math.min(10, state.qty + d));
+  document.getElementById('qtyVal').textContent = state.qty;
+}
+
+// ─────────────── CART ───────────────
+function addToBag() {
+  const p = PRODUCTS[state.id];
+  if (!p) return;
+  const existing = cart.find(i => i.id === state.id && i.color === state.color && i.size === state.size);
+  if (existing) {
+    existing.qty = Math.min(10, existing.qty + state.qty);
+  } else {
+    cart.push({
+      id: state.id, name: p.title, price: p.price,
+      img: `assets/images/${p.images[0]}`,
+      color: state.color, size: state.size, qty: state.qty
+    });
+  }
+  localStorage.setItem('asmon_cart', JSON.stringify(cart));
+  const btn = document.getElementById('addBtn');
+  btn.classList.add('added');
+  btn.querySelector('span').textContent = 'ADDED ✓';
+  setTimeout(() => {
+    btn.classList.remove('added');
+    btn.querySelector('span').textContent = 'ADD TO BAG';
+  }, 1500);
+  updateCartUI();
+  setTimeout(() => openCart(), 300);
+}
+
+function removeItem(i) {
+  cart.splice(i, 1);
+  localStorage.setItem('asmon_cart', JSON.stringify(cart));
+  updateCartUI();
+}
+
+function changeItemQty(i, d) {
+  cart[i].qty = Math.max(1, Math.min(10, cart[i].qty + d));
+  localStorage.setItem('asmon_cart', JSON.stringify(cart));
+  updateCartUI();
+}
+
+function openCart() {
+  document.getElementById('cartDrawer').classList.add('open');
+  document.getElementById('cartBg').classList.add('open');
+}
+
+function closeCart() {
+  document.getElementById('cartDrawer').classList.remove('open');
+  document.getElementById('cartBg').classList.remove('open');
+}
+
+function updateCartUI() {
+  const totalItems = cart.reduce((s, i) => s + i.qty, 0);
+  document.getElementById('navBadge').textContent = totalItems;
+
+  const body = document.getElementById('cartBody');
+  if (cart.length === 0) {
+    body.innerHTML = `<div class="cart-empty"><div class="cart-empty-icon">⌬</div><div class="cart-empty-text">YOUR BAG IS EMPTY</div></div>`;
+  } else {
+    body.innerHTML = cart.map((item, i) => `
+      <div class="cart-item">
+        <div class="cart-item-img"><img src="${item.img}" alt="${item.name}"/></div>
+        <div class="cart-item-info">
+          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-meta">${item.color} · ${item.size}</div>
+          <div class="cart-item-bottom">
+            <div class="cart-item-qty">
+              <button onclick="changeItemQty(${i},-1)">−</button>
+              <span>${item.qty}</span>
+              <button onclick="changeItemQty(${i},1)">+</button>
+            </div>
+            <div class="cart-item-price">$${(item.price * item.qty).toFixed(2)}</div>
+          </div>
+        </div>
+        <button class="cart-item-rm" onclick="removeItem(${i})">REMOVE</button>
+      </div>
+    `).join('');
+  }
+
+  const subtotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  document.getElementById('cartSub').textContent = `$${subtotal.toFixed(2)}`;
+  document.getElementById('cartTotal').textContent = `$${subtotal.toFixed(2)}`;
+}
+
+function checkout() {
+  if (cart.length === 0) return;
+  const total = cart.reduce((s, i) => s + i.price * i.qty, 0).toFixed(2);
+  alert(`CHECKOUT — TOTAL: $${total}\n\nThis is a demo. Real checkout coming soon.`);
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
