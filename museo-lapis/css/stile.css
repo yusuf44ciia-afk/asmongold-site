@@ -1,0 +1,530 @@
+/* ==========================================================================
+   LAPIS — Museo di Archeologia Romana e Medievale
+   Foglio di stile unico — estetica "dossier d'archivio"
+   Palette: carta avorio #F2EDE3 · inchiostro #1A1815 · ceralacca #8B2E1F
+   ========================================================================== */
+
+:root {
+  --carta: #F2EDE3;
+  --carta-scura: #EAE3D4;
+  --inchiostro: #1A1815;
+  --inchiostro-tenue: #4A453D;
+  --ceralacca: #8B2E1F;
+  --filetto: 1px solid var(--inchiostro);
+  --filetto-tenue: 1px solid rgba(26, 24, 21, 0.35);
+  --serif-titoli: "Playfair Display", "Times New Roman", serif;
+  --serif-testo: "EB Garamond", Georgia, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--carta);
+  color: var(--inchiostro);
+  font-family: var(--serif-testo);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---- Utilità tipografiche da schedario ---------------------------------- */
+
+.etichetta {
+  font-family: var(--serif-testo);
+  font-variant: small-caps;
+  letter-spacing: 0.22em;
+  text-transform: lowercase;
+  font-size: 0.85rem;
+  color: var(--inchiostro-tenue);
+}
+
+.numero-catalogo {
+  font-family: var(--serif-testo);
+  font-variant: small-caps;
+  letter-spacing: 0.18em;
+  color: var(--ceralacca);
+  font-weight: 600;
+}
+
+.contenitore {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+/* ---- Testata ------------------------------------------------------------- */
+
+.sopratesta {
+  border-bottom: var(--filetto-tenue);
+  padding: 0.4rem 0;
+  font-variant: small-caps;
+  letter-spacing: 0.3em;
+  font-size: 0.72rem;
+  color: var(--inchiostro-tenue);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+header.testata {
+  border-bottom: 3px double var(--inchiostro);
+  background-color: var(--carta);
+}
+
+.testata-principale {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  padding: 1.6rem 0 1.2rem;
+}
+
+.marchio {
+  text-decoration: none;
+}
+
+.marchio h1,
+.marchio .titolo-museo {
+  font-family: var(--serif-titoli);
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.marchio .titolo-museo .punto {
+  color: var(--ceralacca);
+}
+
+.marchio .sottotitolo {
+  font-variant: small-caps;
+  letter-spacing: 0.28em;
+  font-size: 0.8rem;
+  color: var(--inchiostro-tenue);
+  margin-top: 0.35rem;
+}
+
+/* ---- Navigazione ---------------------------------------------------------- */
+
+nav.navigazione {
+  border-top: var(--filetto-tenue);
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2.4rem;
+  padding: 0.7rem 0;
+}
+
+.nav-lista a {
+  text-decoration: none;
+  font-variant: small-caps;
+  letter-spacing: 0.22em;
+  font-size: 0.92rem;
+  padding: 0.15rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-lista a:hover {
+  color: var(--ceralacca);
+}
+
+.nav-lista a[aria-current="page"] {
+  color: var(--ceralacca);
+  border-bottom-color: var(--ceralacca);
+}
+
+.nav-interruttore {
+  display: none;
+  background: none;
+  border: var(--filetto);
+  font-family: var(--serif-testo);
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  color: var(--inchiostro);
+  margin: 0.8rem 0;
+}
+
+/* ---- Sezioni e intestazioni da registro ----------------------------------- */
+
+main {
+  padding: 2.5rem 0 4rem;
+}
+
+.riga-registro {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: var(--filetto);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.riga-registro h2 {
+  font-family: var(--serif-titoli);
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  font-weight: 700;
+}
+
+/* ---- Hero ------------------------------------------------------------------ */
+
+.hero {
+  margin-bottom: 3.5rem;
+}
+
+.hero-cornice {
+  border: var(--filetto);
+  padding: 0.6rem;
+  background-color: var(--carta-scura);
+}
+
+.hero-cornice img {
+  width: 100%;
+  height: auto;
+  border: var(--filetto-tenue);
+}
+
+.hero-didascalia {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: var(--filetto-tenue);
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+}
+
+.hero-testo {
+  margin-top: 2.2rem;
+  max-width: 46rem;
+}
+
+.hero-testo h2 {
+  font-family: var(--serif-titoli);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.hero-testo h2 em {
+  font-style: italic;
+  color: var(--ceralacca);
+}
+
+.hero-testo p + p {
+  margin-top: 0.8rem;
+}
+
+/* ---- Timbro di ceralacca ----------------------------------------------------- */
+
+.timbro {
+  display: inline-block;
+  border: 2px solid var(--ceralacca);
+  border-radius: 50%;
+  color: var(--ceralacca);
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 1.35;
+  padding: 1.1rem 0.8rem;
+  transform: rotate(-7deg);
+  user-select: none;
+}
+
+.timbro .grande {
+  display: block;
+  font-family: var(--serif-titoli);
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+}
+
+/* ---- Griglia schede reperto ---------------------------------------------------- */
+
+.griglia-reperti {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.6rem;
+}
+
+.scheda {
+  border: var(--filetto);
+  background-color: var(--carta);
+  display: flex;
+  flex-direction: column;
+}
+
+.scheda-testa {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.8rem;
+  border-bottom: var(--filetto-tenue);
+  padding: 0.55rem 1rem;
+  background-color: var(--carta-scura);
+}
+
+.scheda-testa .sala {
+  font-variant: small-caps;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  color: var(--inchiostro-tenue);
+}
+
+.scheda h3 {
+  font-family: var(--serif-titoli);
+  font-size: 1.35rem;
+  line-height: 1.25;
+  padding: 0.9rem 1rem 0.4rem;
+}
+
+.scheda-dati {
+  list-style: none;
+  padding: 0.3rem 1rem 0.6rem;
+}
+
+.scheda-dati li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
+  border-bottom: 1px dotted rgba(26, 24, 21, 0.45);
+  padding: 0.3rem 0;
+  font-size: 0.98rem;
+}
+
+.scheda-dati .campo {
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  color: var(--inchiostro-tenue);
+  white-space: nowrap;
+}
+
+.scheda-dati .valore {
+  text-align: right;
+}
+
+.scheda p.descrizione {
+  padding: 0.7rem 1rem 1.1rem;
+  font-size: 1rem;
+  color: var(--inchiostro);
+  flex-grow: 1;
+}
+
+.scheda-piede {
+  border-top: var(--filetto-tenue);
+  padding: 0.45rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-variant: small-caps;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  color: var(--inchiostro-tenue);
+}
+
+/* ---- Filtri collezione ----------------------------------------------------------- */
+
+.filtri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.filtri button {
+  background: none;
+  border: var(--filetto);
+  font-family: var(--serif-testo);
+  font-variant: small-caps;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  padding: 0.35rem 1rem;
+  cursor: pointer;
+  color: var(--inchiostro);
+}
+
+.filtri button:hover {
+  color: var(--ceralacca);
+  border-color: var(--ceralacca);
+}
+
+.filtri button.attivo {
+  background-color: var(--ceralacca);
+  border-color: var(--ceralacca);
+  color: var(--carta);
+}
+
+.nessun-risultato {
+  border: var(--filetto-tenue);
+  padding: 1.2rem;
+  font-style: italic;
+  color: var(--inchiostro-tenue);
+  display: none;
+}
+
+/* ---- Anteprima collezioni (home) --------------------------------------------------- */
+
+.anteprime {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.6rem;
+  margin-top: 1rem;
+}
+
+.anteprima {
+  border: var(--filetto);
+  padding: 1.6rem 1.4rem 1.4rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: relative;
+}
+
+.anteprima:hover h3 {
+  color: var(--ceralacca);
+}
+
+.anteprima h3 {
+  font-family: var(--serif-titoli);
+  font-size: 1.7rem;
+}
+
+.anteprima .rimando {
+  margin-top: auto;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  color: var(--ceralacca);
+}
+
+/* ---- Blocco note d'archivio (home) --------------------------------------------------- */
+
+.nota-archivio {
+  margin-top: 3.5rem;
+  border: var(--filetto);
+  padding: 1.8rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: var(--carta-scura);
+}
+
+.nota-archivio .testo-nota {
+  max-width: 40rem;
+}
+
+.nota-archivio h3 {
+  font-family: var(--serif-titoli);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Tabelle informazioni ------------------------------------------------------------ */
+
+.tabella-registro {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 2rem;
+}
+
+.tabella-registro th,
+.tabella-registro td {
+  text-align: left;
+  padding: 0.55rem 0.4rem;
+  border-bottom: 1px dotted rgba(26, 24, 21, 0.45);
+  vertical-align: top;
+}
+
+.tabella-registro th {
+  font-variant: small-caps;
+  letter-spacing: 0.16em;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--inchiostro-tenue);
+  white-space: nowrap;
+  width: 12rem;
+}
+
+.colonne-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0 3rem;
+}
+
+/* ---- Piè di pagina ---------------------------------------------------------------------- */
+
+footer.piede {
+  border-top: 3px double var(--inchiostro);
+  padding: 1.4rem 0 2rem;
+  font-size: 0.95rem;
+  color: var(--inchiostro-tenue);
+}
+
+.piede-righe {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem 2rem;
+}
+
+.piede .protocollo {
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+}
+
+/* ---- Adattamento schermi piccoli ---------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .nav-interruttore {
+    display: inline-block;
+  }
+
+  .nav-lista {
+    display: none;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav-lista.aperta {
+    display: flex;
+  }
+
+  .sopratesta {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .nota-archivio {
+    flex-direction: column;
+  }
+
+  .timbro {
+    align-self: flex-start;
+  }
+}
